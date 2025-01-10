@@ -1,0 +1,94 @@
+{
+    "name":"amna",
+    "id":2,
+    "isLoggedIn":true
+}
+
+
+[
+    {},
+    {},
+    {},
+]
+
+
+// users data simple api in object format
+// https://api.github.com/users/hiteshchoudhary
+
+
+// api example
+// https://randomuser.me/
+
+// json formatter   ---- website name
+
+
+
+
+{
+    "results": [
+      {
+        "gender": "male",
+        "name": {
+          "title": "Mr",
+          "first": "حسین",
+          "last": "محمدخان"
+        },
+        "location": {
+          "street": {
+            "number": 3734,
+            "name": "ولیعصر / مصدق"
+          },
+          "city": "قرچک",
+          "state": "خراسان جنوبی",
+          "country": "Iran",
+          "postcode": 57863,
+          "coordinates": {
+            "latitude": "16.7507",
+            "longitude": "-54.6311"
+          },
+          "timezone": {
+            "offset": "-3:30",
+            "description": "Newfoundland"
+          }
+        },
+        "email": "hsyn.mhmdkhn@example.com",
+        "login": {
+          "uuid": "5955ea48-fc4c-4933-aec1-bed1044bdf5c",
+          "username": "smallbutterfly733",
+          "password": "tucson",
+          "salt": "0WsWKpni",
+          "md5": "f08d311fee9b868e42b2f866308a3f1e",
+          "sha1": "95858d3e5deab637f1b78723e17552002a5918d5",
+          "sha256": "9dacfb0c77e033417c63a4772ef4073a543c29c57678bcdba5633551380b469d"
+        },
+        "dob": {
+          "date": "1994-07-02T21:16:08.655Z",
+          "age": 30
+        },
+        "registered": {
+          "date": "2018-11-10T11:53:45.073Z",
+          "age": 6
+        },
+        "phone": "002-36893778",
+        "cell": "0978-911-0127",
+        "id": {
+          "name": "",
+          "value": null
+        },
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/7.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/7.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/7.jpg"
+        },
+        "nat": "IR"
+      }
+    ],
+    "info": {
+      "seed": "865f0f95e75409fe",
+      "results": 1,
+      "page": 1,
+      "version": "1.4"
+    }
+}
+
+
