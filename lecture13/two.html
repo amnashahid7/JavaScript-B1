@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title" class="heading">Javascript DOM Lecture 2 <span style="display: none;">Heeloo</span></h1>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <input type="text">
+    <input type="password" placeholder="password">
+</body>
+
+</html>
+
+
+
+
+
+document.getElementsByClassName('heading')[0].textContent = "ahamad"
+'ahamad'
+document.getElementById("title").id
+'title'
+document.getElementById("title").className
+'heading'
+
+document.getElementById('title').innerText
+'Javascript DOM Lecture 2'
+document.getElementById('title').innerHTML
+'Javascript DOM Lecture 2'
+document.getElementById('title').textContent
+'Javascript DOM Lecture 2'
+
+
+document.getElementById('title').textContent
+'Javascript DOM Lecture 2 Heeloo'
+document.getElementById('title').innerHTML
+'Javascript DOM Lecture 2 <span>Heeloo</span>'
+document.getElementById('title').innerText
+'Javascript DOM Lecture 2 Heeloo'
+
+
+
+
+document.getElementById('title').innerText
+'Javascript DOM Lecture 2'
+document.getElementById('title').innerHTML
+'Javascript DOM Lecture 2 <span style="display: none;">Heeloo</span>'
+document.getElementById('title').textContent
+'Javascript DOM Lecture 2 Heeloo'
+
+
+
+
+let title= document.getElementById('title')
+undefined
+title.style.backgroundColor = "red";
+'red'
+title.style.padding="20px"
+'20px'
+title.style.border="2px solid black"
+'2px solid black'
+title.style.fontWeight="bold"
+'bold'
+
+
+
+document.querySelector("title")
+document.querySelector("#title")
+document.querySelector(".para")
+document.querySelectorAll(".para")
+NodeList(4) [p.para, p.para, p.para, p.para]
+0
+:
+p.para
+1
+:
+p.para
+2
+:
+p.para
+3
+:
+p.para
+length
+:
+4
+[[Prototype]]
+:
+NodeList
+
+
+
+
+document.querySelector("ul")
+document.querySelector("li")
+
+
+
+
+document.querySelector("p:last-of-type")
+<p class=​"para">​Lorem ipsum dolor sit amet.​</p>​
+
+document.querySelector("p:first-of-type").style.color = "blue";
+'blue'
+
+
+
+
+
+document.querySelector("input")
+<input type=​"text">​
+document.querySelector("input[type='password']")
+<input type=​"password" placeholder="password">​
+
+
+
+
+document.getElementById('title').getAttribute('id')
+'title'
+document.getElementById('title').getAttribute('class')
+'heading'
+document.getElementById('title').setAttribute('class','heading2')
+undefined
+document.getElementById('title').getAttribute('class')
+'heading2'
+
+
+
+document.getElementById('title').setAttribute('class','heading heading2')
+undefined
+document.getElementById('title').getAttribute('class')
+'heading heading2'
