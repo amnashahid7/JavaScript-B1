@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Languages</h2>
+    <ul class="ulList" id="ulList">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    const createList = (langName) => {
+
+        let li = document.createElement('li');
+
+        li.innerHTML = `${langName}`;
+        document.querySelector('.ulList').appendChild(li)
+        document.getElementById('ulList').appendChild(li)
+        //Cause an error because  className return us the HTML collection and can be access by its index vale
+        //document.getElementsByClassName('ulList').appendChild(li)
+    }
+    createList("java")
+    createList("python")
+
+
+
+    const createOptiList = (langName) => {
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(`${langName}`));
+
+        // let text = document.createTextNode(`${langName}`)
+        // li.appendChild(text)
+        document.querySelector('.ulList').appendChild(li)
+
+    }
+    createOptiList("ruby on rails")
+    createOptiList("golang")
+
+
+
+
+
+// HOMEWORK
+    // Make the function for creating the div with parameters (padding,bg-color,font-size, color).
+    // 1 div with appendchild of list items
+    // 1 div with appendchild of images
+    // 1 div with appendchild of heading and paragraph
+
+</script>
+
+</html>
