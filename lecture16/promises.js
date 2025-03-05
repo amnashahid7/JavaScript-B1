@@ -34,25 +34,76 @@
 // })
 
 
-let promiseFour = new Promise(function (resolve, reject) {
-    let error = true;
-    if (!error) {
-        resolve({ username: 'raza', cousre: "js" })
-    }
-    else {
-        // console.log("Error");
-        reject();
+// let promiseFour = new Promise(function (resolve, reject) {
+//     let error = false;
+//     if (!error) {
+//         resolve({ username: 'raza', cousre: "js" })
+//     }
+//     else {
+//         // console.log("Error");
+//         reject();
 
-    }
-})
+//     }
+// })
 
-promiseFour.then(function (user) {
-    console.log(user.cousre);
+// promiseFour.then(function (user) {
+//     console.log(user.cousre);
 
-}).catch(function () {
-    console.log("something went wrong");
+// }).catch(function () {
+//     console.log("something went wrong");
 
-}).finally(() => { console.log("the promise is either rejected or completed this line is executed") });
+// }).finally(() => { console.log("the promise is either rejected or completed this line is executed") });
+
+
+
+
+
+// let promiseFive = new Promise(function (resolve, reject) {
+//     setTimeout(
+//         function () {
+//             let error = true;
+//             if (!error) {
+//                 resolve({ username: 'raza', cousre: "js" })
+//             }
+//             else {
+//                 // console.log("Error");
+//                 reject("Error");
+
+//             }
+//         }
+//         , 1000)
+// })
+
+// async function promiseFiveRun() {
+//     try {
+//         let response = await promiseFive;
+//         // let data = await response;
+//         console.log(response);
+
+//     } catch (error) {
+//         console.log(error);
+
+//     }
+
+// }
+// promiseFiveRun();
+
+
+async function getAllUsers() {
+    let response = await fetch('https://jsonplaceholder.typicode.com/users');
+    let data = await response.json();
+    console.log(data);
+
+
+}
+getAllUsers();
+
+console.log("from the last");
+
+
+
+
+
 
 
 
