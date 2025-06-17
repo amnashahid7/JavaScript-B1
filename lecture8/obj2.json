@@ -1,0 +1,65 @@
+[
+  {
+    "user": {
+      "name": "amna",
+      "email": "amna@gamil.com"
+    }
+  },
+  {
+    "name1":"saira",
+    "email1":"saira@gmail.com"
+  },
+
+{
+    "carsdata": [
+  {
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": 2023,
+    "type": "Sedan"
+  },
+  {
+    "brand": "Honda",
+    "model": "Civic",
+    "year": 2022,
+    "type": "Sedan"
+  },
+  {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 2024,
+    "type": "Coupe"
+  },
+  {
+    "brand": "Tesla",
+    "model": "Model 3",
+    "year": 2023,
+    "type": "Electric"
+  },
+  {
+    "brand": "BMW",
+    "model": "X5",
+    "year": 2023,
+    "type": "SUV"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "C-Class",
+    "year": 2022,
+    "type": "Luxury Sedan"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "year": 2023,
+    "type": "Compact"
+  },
+  {
+    "brand": "Kia",
+    "model": "Sportage",
+    "year": 2024,
+    "type": "SUV"
+  }
+]
+}
+]
