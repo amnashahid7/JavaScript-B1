@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- using querySelector -->
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+
+
+  <!-- using ClassName -->
+
+       <ul>
+        <li class="li-item">apple</li>
+        <li class="li-item">banana</li>
+        <li class="li-item">orange</li>
+        <li class="li-item">peach</li>
+    </ul>
+</body>
+</html>
+
+
+
+  <!-- using querySelector -->
+<!--
+document.querySelectorAll("li")
+NodeList(4) [li, li, li, li]0: li1: li2: li3: lilength: 4[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+let liList=document.querySelectorAll("li")
+undefined
+liList.forEach((li)=>{
+    li.style.backgroundColor="black";
+})
+undefined
+liList.forEach((li)=>{
+    li.style.backgroundColor="black";
+    li.style.color="white"
+})
+undefined
+liList.foreach((li)=>{
+    li.style.padding="10px"
+})
+VM464:1 Uncaught TypeError: liList.foreach is not a function
+    at <anonymous>:1:8
+(anonymous) @ VM464:1Understand this error
+liList.forEach((li)=>{
+    li.style.padding="10px"
+})
+
+
+
+
+
+-->
+
+
+
+<!-- byClassName -->
+<!--
+
+
+
+
+let list1= document.getElementsByClassName('li-item')
+undefined
+console.log(list1)
+VM1327:1 
+HTMLCollection(4) [li.li-item, li.li-item, li.li-item, li.li-item]
+0
+: 
+li.li-item
+1
+: 
+li.li-item
+2
+: 
+li.li-item
+3
+: 
+li.li-item
+length
+: 
+4
+[[Prototype]]
+: 
+HTMLCollection
+
+
+
+
+
+
+let convertedList=Array.from(list1)
+undefined
+convertedList.foreach
+undefined
+convertedList.forEach((li)=>{
+    li.style.color="yellow"
+})
+undefined
+convertedList.forEach((li)=>{
+    li.style.color="yellow";
+    li.style.backgroundColor="black"
+})
+-->
+
+
+
+
+
+
+<!--  practice from website 
+  let H3= document.getElementsByClassName('h3');
+undefined
+console.log(H3)
+VM449:1 HTMLCollection []length: 0[[Prototype]]: HTMLCollection
+undefined
+let H3= document.getElementsByClassName('mw-heading');
+undefined
+console.log(H3)
+VM489:1 HTMLCollection(56) [div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading3, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading3, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading3, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading3, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading5, div.mw-heading.mw-heading5, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2]
+undefined
+let convertedArray= Array.from(H3)
+undefined
+console.log(convertedArray)
+VM671:1 (56) [div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading3, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading3, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading3, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading3, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading4, div.mw-heading.mw-heading5, div.mw-heading.mw-heading5, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading3, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2, div.mw-heading.mw-heading2]
+undefined
+converte
+VM697:1 Uncaught ReferenceError: converte is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM697:1Understand this error
+convertedArray.forEach((h3)=>{
+    h3.style.backgroundColor="green"
+})
+undefined
+let qH3= document.querySelectorAll('h3');
+undefined
+console.log(qH3)
+VM975:1 NodeList(28) [h3#Creation_at_Netscape, h3#Adoption_by_Microsoft, h3#The_rise_of_JScript, h3#Growth_and_standardization, h3#Reaching_maturity, h3#Examples_of_scripted_behavior, h3#Libraries_and_frameworks, h3#JavaScript_engine, h3#Runtime_system, h3#Imperative_and_structured, h3#Weakly_typed, h3#Dynamic, h3#Object-orientation_(prototype-based), h3#Functional, h3#Delegative, h3#Miscellaneous, h3#Vendor-specific_extensions, h3#Cross-site_scripting, h3#Cross-site_request_forgery, h3#Misplaced_trust_in_the_client, h3#Misplaced_trust_in_developers, h3#Browser_and_plugin_coding_errors, h3#Sandbox_implementation_errors, h3#Hardware_vulnerabilities, h3#Java, h3#JSON, h3#Transpilers, h3#WebAssembly]
+undefined
+-->
