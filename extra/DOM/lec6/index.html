@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Element Create in DOM</h1>
+    <script>
+        let div= document.createElement('div');
+        div.className="div1";
+        div.id="divID";
+        div.innerText="Hello World";
+        div.style.padding="10px";
+        div.style.backgroundColor="yellow";
+        document.body.appendChild(div);
+        let H1= document.createElement("h1");
+        H1.innerText="heelo i am h1";
+        document.body.appendChild(H1);
+
+        // let div2= div.createElement("p");
+        // div2.innerHTML="<p>lorem from p tag</p>"
+        // document.body.appendChild(div2);
+        // cause an error because the createElement is not the method of any html tag it only related to the document;
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>list creation from dom</h1>
+    <h2>Language</h2>
+    <ul class="ulList" id="ulList">
+       
+    </ul>
+    <script>
+        let ulList= document.getElementById('ulList')
+        // console.log(ulList);
+        let li= document.createElement('li');
+        li.innerText="HTML";
+        ulList.appendChild(li);
+        
+    </script>
+</body>
+</html>
