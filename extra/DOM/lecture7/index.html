@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h2>Languages</h2>
+    <ul class="ulList" id="ulList">
+        <li>Javascript</li>
+    </ul>
+    <script>
+        const createOptiList = (langName) => {
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(`${langName}`));
+
+        // let text = document.createTextNode(`${langName}`)
+        // li.appendChild(text)
+        document.querySelector('.ulList').appendChild(li)
+
+    }
+    createOptiList("ruby on rails")
+    createOptiList("golang")
+     createOptiList("typscript")
+    createOptiList("django")
+
+
+    //Edit
+    let secondLang=document.querySelector('li:nth-child(2)');
+    console.log(secondLang);
+
+    // secondLang.innerHTML="rubsssssss"
+
+    // secondLang.outerHTML="<li>rubss</li>"
+    let newLi= document.createElement('li');
+    newLi.textContent="rubb111";
+  secondLang.replaceWith(newLi);
+
+
+
+  //remove
+      let firstLang=document.querySelector('li:first-child');
+    console.log(firstLang,"firstLang");
+
+    firstLang.remove();
+     newLi.remove();
+
+    
+   
+    
+    </script>
+ 
+</body>
+</html>
