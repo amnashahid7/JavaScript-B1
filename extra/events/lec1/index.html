@@ -1,3 +1,10 @@
+<!-- 
+ // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +21,14 @@
                     alt="photoshop"></li>
             <li><img width="200px" id="japan"
                     src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-                    alt="" onclick="alert('img clickeddddd')"></li>
+                    alt=""></li>
+                    <!-- <li><img width="200px" id="japan"
+                    src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="" onclick="alert('img clickeddddd')"></li> -->
             <li><img width="200px" id="river"
                     src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
                     alt=""></li>
-            <li><img width="200px" id="owl"
+            <li><img width="200px" id="owl" class="owl-className"
                     src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
                     alt=""></li>
             <li><img width="200px" id="prayer"
@@ -28,11 +38,24 @@
         </ul>
     </div>
     <script>
-        document.getElementById('owl').onclick=function(e){
-            console.log(e);
+        // document.getElementById('owl').onclick=function(e){
+        //     console.log(e);
             
-            alert('heelo from last image')
+        //     alert('heelo from last image')
+        // }
+
+
+        document.getElementById('owl').addEventListener('click',function(e){
+            e.stopPropagation();
+            console.log("owl is printed");
         }
+            );
+                document.getElementById('images').addEventListener('click',function(){console.log("images is printed");})
+document.getElementById('google').addEventListener('click',function(e){
+    e.preventDefault();
+    console.log("google clicked");
+    
+})
     </script>
 </body>
 </html>
