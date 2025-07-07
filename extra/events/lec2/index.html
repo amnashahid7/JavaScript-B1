@@ -11,7 +11,7 @@
     <script>
     const bombCancel=    setTimeout(()=>(console.log("heelo")
         ),2000)
-document.getElementsByTagName('button')[0].addEventListener('click', ()=>( clearTimeout(bombCancel)))
+document.getElementsByTagName('button')[0].addEventListener('click', ()=>( clearTimeout(ref)))
        ;
 
 
@@ -20,7 +20,14 @@ document.getElementsByTagName('button')[0].addEventListener('click', ()=>( clear
        ),1000)
 
 
-       clearInterval(clear)
+       clearInterval(clear);
+
+
+     const ref=  setTimeout(function(){
+        console.log("heeelo from setTimeout");
+        
+       },3000);
+    //    clearTimeout(ref);
     </script>
 </body>
 </html>
